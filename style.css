@@ -1,0 +1,57 @@
+.page{
+    background-color: rgb(21, 152, 192);
+    color: rgb(255, 255, 255);
+    padding:20px;
+    text-align:center;
+    font-family:'Noto Serif Thai', serif;
+  }
+
+  /* .pageone{
+    padding: 0px;
+    text-align: left;
+    font-family: 'Noto Serif Thai', serif;
+    color: rgb(37, 98, 148);
+  } */
+
+body{
+    display: inline-block;
+    
+}
+ .container{
+    display: inline-block;
+    padding: 20px;
+    bottom: 0px;
+    width: 500px; 
+  }
+
+
+img{
+   width: 500px;
+   height:500px;
+   display: flex;
+   
+}
+
+.text{
+    width: 500px;
+    color: rgb(14, 144, 184);
+    font-family: 'Noto Serif Thai', serif;
+    text-align: justify;
+    letter-spacing: 0px;
+    
+    /* background-color: aqua; */
+}
+.jang{
+  background-color: rgb(201, 18, 124);
+  color: rgb(255, 255, 255);
+  padding:20px;
+  text-align:center;
+  font-family:'Noto Serif Thai', serif;
+}
+.url{
+  /* background-color: rgb(205, 214, 80); */
+    color: rgb(19, 13, 13);
+    padding:20px;
+    text-align:center;
+    font-family:'Noto Serif Thai', serif;
+}
