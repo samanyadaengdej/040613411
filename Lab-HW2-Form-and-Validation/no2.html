@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="form-echo.php">
+        <h2>แบบฟอร์มจองทัวร์</h2>
+       
+        <fieldset>
+        <legend>ข้อมูลทั่วไป</legend>
+            
+        <p><label>ชื่อ-สกุล:</label><br>
+            <input 
+                type="text" 
+                placeholder="กรอกชื่อ-สกุล" 
+                pattern="[A-Za-zก-๏]+[A-Za-zก-๏\s]+"
+                required
+                >*
+             
+                
+        <p><label>Email:</label><br>   
+            <input 
+            type="email" 
+            pattern="[A-Za-z0-9_]+@[A-Za-z0-9_-]+.[a-z]{2,6}$"
+            required
+            >* 
+           
+            <p><label>โทรศัพท์:</label><br> 
+            <input 
+            type="tel"
+            value="+66"
+            pattern="(\+66|0)(\d[0-9]*9)" *  
+            required
+            >*
+      
+            <p><label>ที่อยู่:</label><br>
+                 <textarea name="address"
+                 id="address"
+                 cols="35"
+                 rows="5"
+                >
+                </textarea>
+               
+            <p><label>รหัสไปรษณีย์:</label><br>  
+                <input 
+                type="text"
+                pattern="[0-9]{5}"
+                size="5"
+                maxlength="5"
+                >
+
+            <p><label>รูปผู้จอง:</label><br>
+                <input 
+                type="file"
+                id="myfile"
+                name="myfile"
+                >
+            
+        </fieldset><br>
+        
+        <fieldset>
+        <legend>ข้อมูลเข้าสู่ระบบ</legend>
+        <p><label>Username:</label><br>
+            <input 
+            type="text"
+            pattern="[A-Za-z0-9]{8}+[\s_-A-Za-zก-๏0-9]+"
+            minlength="8"><br>
+           <small><i>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่8ตัวไป</i></small>
+
+        <p><label>Password:</label><br>
+           <input type="text"
+            pattern="[A-Za-z0-9]{8}+[\s_-A-Za-zก-๏0-9]+"
+            minlength="8"><br>
+           <small><i>ประกอบด้วยอักขระอะไรก็ได้</i></small>  
+        </fieldset><br>
+
+        <fieldset>
+        <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+        <label>แพ็คเกจทัวร์:</label>
+        <select name="country">
+            <option value="Austria">Austria</option>
+            <option value="Korea">Korea</option>
+            <option value="France">France</option>
+          </select>
+          <p><label>วันที่เดินทาง:</label>
+            <input type="date">
+
+        <p><label>จำนวนผู้เดินทาง:</label>
+            <input 
+                type="number"
+                min="1"
+                max="5">
+        
+        <p><label>เน้นการท่องเที่ยวแบบใด?</label>
+            <div>
+                <input 
+                type="checkbox"
+                id="ช็อปปิ้ง"
+                name="ช็อปปิ้ง">
+                <label for="ช็อปปิ้ง">ช็อปปิ้ง</label> 
+            </div>
+            <div>
+                <input 
+                type="checkbox" 
+                id="ธรรมชาติ" 
+                name="ธรรมชาติ"> 
+                <label for="ธรรมชาติ">ธรรมชาติ</label> 
+            </div>
+            <div>
+                <input 
+                type="checkbox" 
+                id="ทะเล" 
+                name="ทะเล"> 
+                <label for="ทะเล">ทะเล</label> 
+            </div><br>
+    </fieldset><br>
+
+    <label>ยอมรับเงื่อนไขและตกลง</label>
+    <input 
+    type="radio" 
+    id="agree" 
+    name="drone">
+        <label for="agree">I agree</label>
+
+    <input 
+    type="radio" 
+    id="disagree" 
+    name="drone">
+        <label for="disagree">I disagree</label>
+        &nbsp;&nbsp;
+    <input type="submit" value="จอง"><p>
+        </fieldset>
+      </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset='utf-8'>
+    </head>
+    <body>
+    <form action="" method="get">
+
+    USERNAME :
+    <input 
+        type="text"
+        name="username"
+        placeholder="Username"
+        pattern="\d{1-15}"
+        title="Username should only contain lowercase letters. e.g. john">
+
+    <p><label >Username :</label>
+        <input
+        type="text"
+        pattern="[A-Z]{1-15}"
+        >
+
+    <p><label >รหัสนักศึกษา :</label>
+    <input
+        type="text"
+        name="username"
+        pattern="(\d{1,2}-?\d{6}-?\d{4}-?\d{1})"
+    ><br>
+
+    <p><label>บ้านเลขที่ :</label>
+    <input
+        type="text"
+        name="username"
+        pattern="((\d)+(/?\d)+)"><br>
+
+    <p><label>รหัสสินค้า :</label>
+    <input
+        type="text"
+        name="username"
+        pattern="[A-Z]{3}(\d){2}"><br>
+
+    <p><label>สาขาวิชา:</label>
+    <select name="dept">
+        <option value="">--Please choose an option--</option>
+        <option value="CS">CS</option>
+        <option value="IC">IC</option>
+        <option value="MA">MA</option>
+        <option value="IMI">IMI</option>
+        <option value="AS">AS</option>
+        <option value="AFET">AFET</option>
+    </select>
+    <p><input type="submit" value="Submit">
+    </form>
+    </body>
+    </html>

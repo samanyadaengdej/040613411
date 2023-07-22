@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>HTML input type </title>
+
+</head>
+
+<body>
+
+    <form action="form-echo.php" method="get">
+      
+    <fieldset>   
+        <legend>ข้อ.1</legend>
+        <p><label>ชื่อเต็ม :</label><br>
+    <input type="text"
+           pattern="[A-Za-zก-๏]+"><br>
+
+    <p><label>ย่อของสาขาวิชา :</label><br>
+        <input type="text"
+               pattern="[A-Za-zก-๏]+"><br>
+    </fieldset><br>  
+
+    <fieldset>   
+        <legend>ข้อ.2</legend>
+        <p><label>จำนวนเงินที่จะโอน :</label><br>
+    <input type="text"
+           pattern="[/d]+"> บาท<br>
+    
+    </fieldset><br> 
+
+    <fieldset>
+    <legend>ข้อ.3</legend>
+    <p><label>อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย :</label>
+    <br>
+    <br> 1.) <input type="text"
+               pattern="[A-Za-zก-๏]+"> <br>
+    2.) <input type="text"
+               pattern="[A-Za-zก-๏]+"> <br>
+    3.) <input type="text"
+               pattern="[A-Za-zก-๏]+"> <br>
+    4.) <input type="text"
+               pattern="[A-Za-zก-๏]+"> <br>
+    5.) <input type="text"
+               pattern="[A-Za-zก-๏]+"> <br>
+
+    </fieldset><br>
+    
+    <fieldset>
+    <legend>ข้อ.4</legend>
+    <p><label>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</label><br>
+    <p><label>เดือนที่1 : </label><br>
+    <input type="text"
+           pattern="[/d]+"> บาท <br>
+    <p><label>เดือนที่2 : </label><br>
+    <input type="text"
+           pattern="[/d]+"> บาท <br>
+    <p><label>เดือนที่3 : </label><br>
+    <input type="text"
+           pattern="[/d]+"> บาท <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อ.5</legend>
+    <p><label>รหัสบัตรประชาชน :</label><br>
+    <input type="text"
+            name="IDCard" 
+            maxlength="13" 
+            pattern="[0-9]"> <br><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>ข้อ.6</legend>
+    <p><label>ความพึงพอใจของหนังสือเล่มนี้  :</label><br>          
+         <input type="radio" > Very : พอใจมาก <br>
+         <input type="radio" > Moderate : พอใจปานกลาง <br>
+         <input type="radio" > Less : พอใจน้อย <br>  
+    </fieldset> <br>
+   
+    <fieldset>
+    <legend>ข้อ.7</legend>
+    <p><label>อาการป่วย : </label><br> 
+    <textarea name="Sick"
+              cols="30" 
+              rows="10"> 
+    </textarea><br>
+    <input type="submit" value="ส่ง">
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อ.8</legend>
+        <p><label>ในช่วง 3 เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่ : </label><br> 
+            <br><input type="radio" > ใช่
+            <input type="radio" > ไม่
+    </fieldset><br>
+
+    <fieldset>
+        <legend>ข้อ.9</legend>
+        <p><label>รหัสผ่าน : </label><br> 
+    <input type="password"
+    minlength="5" ><br>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>ข้อ.10</legend>
+        <p><label>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน :</label><br>
+    <br> 
+    เข้าเรียน : <input type="time" > &nbsp;
+    สิ้นสุดการเรียน : <input type="time" > <br><br>
+   </fieldset><br>
+
+   <fieldset>
+    <legend>ข้อ.11</legend>
+    <p><label>วันเวลาที่ต้องไปพบแพทย์ : </label><br> 
+    <input type="date" name=" Date" > <br>
+   </fieldset><br>
+
+    <input type="Submit" value="SUBMIT">
+
+    </form>
+</body>
+
+</html>
