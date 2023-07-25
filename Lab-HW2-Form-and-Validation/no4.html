@@ -4,9 +4,9 @@
     <meta charset='utf-8'>
     </head>
     <body>
-    <form action="" method="get">
+    <form action="form-echo.php" method="get">
 
-    USERNAME :
+   USERNAME :
     <input 
         type="text"
         name="username"
@@ -14,10 +14,11 @@
         pattern="\d{1-15}"
         title="Username should only contain lowercase letters. e.g. john">
 
-    <p><label >Username :</label>
+    <p><label >Username :</label> 
+        <br> <label >กรอกชื่อด้วยภาษาอังกฤษ อักขระตัวใหญ่เท่านั้น</label><br>
         <input
         type="text"
-        pattern="[A-Z]{1-15}"
+        pattern="[A-Z\]{1-15}"
         >
 
     <p><label >รหัสนักศึกษา :</label>
@@ -38,6 +39,13 @@
         type="text"
         name="username"
         pattern="[A-Z]{3}(\d){2}"><br>
+
+        <p><label >Username :</label>
+            <br> <label >กรอกชื่อด้วยภาษาไทยเท่านั้น</label> <br>
+            <input
+            type="text"
+            pattern="[ก-๏\]{1-15}"
+            >
 
     <p><label>สาขาวิชา:</label>
     <select name="dept">
