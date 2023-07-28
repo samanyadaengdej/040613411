@@ -1,0 +1,18 @@
+.yellow-bg{
+    color: rgb(0, 0, 0);
+    background-color: rgb(233, 253, 49);
+}
+.gray-bg{
+    background-color: rgb(94, 95, 91);
+}
+span#year{
+    color: rgb(207, 49, 49);
+    
+}
+table,td {
+    border: 1px solid black;
+
+  }
+  tr:hover{
+    background-color: rgb(47, 238, 245);
+  }
