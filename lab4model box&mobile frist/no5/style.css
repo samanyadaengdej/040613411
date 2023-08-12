@@ -1,0 +1,43 @@
+.content{
+    padding: 40px ;
+    width: 100%;
+    border: 10px solid #ffffff;
+    background-color: rgb(202, 190, 202);
+}
+.flexible{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+.botton{
+    background-color: #3004aa; 
+    border: 1px solid #3004aa;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    width: 100px;
+    height: 20px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+  a{
+    text-decoration: none;
+}
+@media (max-width: 800px){
+    .flexible{
+        display: block;
+    }
+    .content{
+        width: auto;
+    }
+    .product{
+        display: flex;
+        justify-content: center;
+    }
+    .botton{
+        width: auto;
+    }
+}
+  
