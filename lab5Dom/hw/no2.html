@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script>
+    function changecolor(id){
+        const textcolor = document.getElementById(id);
+        if (textcolor !== '') {
+            textcolor.style.color = 'green';
+          } else {
+            textcolor.style.color = 'black';
+          }
+    }
+
+   
+</script>
+</head>
+<body>
+    Name: <input type="text" id="Name" onchange="changecolor('Name')"><br> 
+    Age: <input type="text" id="Age" onchange="changecolor('Age')"><br>
+    Birthdate: <input type="text" id="Birthdate" onchange="changecolor('Birthdate')"><br>
+    <!-- ใช้ทั้ง onchange กับ onblur ได้ -->
+</body>
+</html>
