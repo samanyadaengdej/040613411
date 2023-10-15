@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <script>
+        function send() {
+            request = new XMLHttpRequest(); 
+            request.onreadystatechange = showResult; 
+
+            
+            var keyword = document.getElementById("keyword").value;
+            var url= "workshop2.php?keyword=" + keyword;
+       
+            request.open("GET", url, true); //กระบวนการฟังก์ชั่นของ ajax
+            request.send(null);   //ajax จะส่งก็ต่อเมื่อ onkeyup
+        }
+
+        function showResult() { //state4
+            if (request.readyState == 4) {
+                if(request.status == 200){
+                    document.getElementById("result").innerHTML = request.responseText; //ได้รับกลับมาแล้ว
+                }
+            }
+        }
+    </script> -->
+    <script>
+        function find() {
+            const keyword = document.getElementById("keyword");
+            const result = document.getElementById("result");
+    
+            if (keyword.value.length === 0) {
+                result.innerHTML = '';
+                return;
+            }
+    
+            fetch(`workshop2.php?keyword=${keyword.value}`)
+                .then(response => response.text())
+                .then(data => {
+                    const array = JSON.parse(data);
+                    result.innerHTML = '';
+    
+                    for (const arr of array) {
+                        result.innerHTML += `
+                            <div>
+                                <div><img src="./img/${arr.img}.jpg"></div>
+                                รายชื่อสมาชิก : ${arr.name}
+                                <hr>
+                            </div>
+                        `;
+                    }
+                })
+                .catch(error => {
+                    console.error("เกิดข้อผิดพลาดในการดึงข้อมูล:", error);
+                });
+        }
+    </script>
+    
+
+</head>
+<body>
+    <h1>ค้นหาสมาชิก</h1>
+    <input type="text" id="keyword" placeholder="ค้นหาสมาชิก" onkeyup="find()">
+    <div id="result"></div>
+
+</body>
+</html>
